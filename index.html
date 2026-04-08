@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cute Cloud App ☁️✨</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #ffdee9, #b5fffc);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Card */
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            text-align: center;
+            max-width: 400px;
+        }
+
+        /* Title */
+        h1 {
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        /* Subtitle */
+        p {
+            font-size: 16px;
+            opacity: 0.7;
+        }
+
+        /* Cute button */
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        /* Floating animation */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .emoji {
+            font-size: 40px;
+            animation: float 2s infinite;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="emoji">☁️✨</div>
+    <h1>Hello from EC2 💖</h1>
+    <p>Your cute Dockerized website is running!</p>
+
+    <button onclick="sayHi()">Click Me 🐰</button>
+</div>
+
+<script>
+    function sayHi() {
+        alert("You're awesome 😎✨");
+    }
+</script>
+
+</body>
+</html>
