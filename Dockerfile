@@ -6,6 +6,6 @@ RUN rm -rf /usr/share/nginx/html/*
 # Copy your single HTML file
 COPY index.html /usr/share/nginx/html/index.html
 
-EXPOSE 80
+EXPOSE 8080
 
 CMD ["nginx", "-g", "daemon off;"]
